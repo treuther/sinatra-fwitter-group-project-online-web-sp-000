@@ -1,5 +1,9 @@
 <h1>Your Tweet</h1>
 
+<div>
+    <%= @user.username %>: <%=@tweet.content %>
+  </div>
+
   <a href="/tweets/<%=@tweet.id%>/edit">Edit Tweet</a>
 
   <div>
