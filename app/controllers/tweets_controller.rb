@@ -33,8 +33,7 @@ class TweetsController < ApplicationController
   get '/tweets/:id' do
     if logged_in?
       @tweet = Tweet.find_by(id: params[:id])
-      @user = User.find_by(id: @tweet.user_id)
-      @tweet - Tweet.last
+      # @user = User.find_by(id: @tweet.user_id)
       binding.pry
       erb :'/tweets/show_tweet'
     else
